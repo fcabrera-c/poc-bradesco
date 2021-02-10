@@ -10,13 +10,12 @@ Given(/^we access on the page$/, function() {
 
 Given(/^we select option "([^"]*)" in the bar menu$/, function(arg1) {
   $("#__next > div > header > div.ng-24.styles-module_ng__r3HCi > div.ngi--6--15-16--1- > div > nav > ul > li:nth-child(6) > div > div > div > div.styles-module_nav-item__container__SsGye.styles-module_nav-item__container--header__1c0hi > i").click();
-  $(":root").waitTime(1, timeUnits.SECONDS);
+  $(":root").waitTime(3, timeUnits.SECONDS);
   scenario.embed(browser.screenshot().asBytes(), "image/png");
-  $(":root").waitTime(2, timeUnits.SECONDS);
+  $(":root").waitTime(1, timeUnits.SECONDS);
 });
 Given(/^we click the option "([^"]*)"$/, function(arg1) {
   $("#__next > div > header > div.ng-24.styles-module_ng__r3HCi > div.ngi--6--15-16--1- > div > nav > ul > li:nth-child(6) > div > div > div > div.styles-module_dropdown__content__3IGDs > ul > li:nth-child(1)").click();
-  $(":root").waitTime(1, timeUnits.SECONDS);
   
 });
 
