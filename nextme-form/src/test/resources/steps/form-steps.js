@@ -10,6 +10,7 @@ Given(/^we access on the page$/, function() {
 Given(/^we go to the form below of section "([^"]*)"$/, function(arg1) {
   $("#__next > div > div.style_footerGroup__2KIy0 > section > div > div > div > div.ngi--2-7-6--23-14--1--2 > div").scrollIntoView();
   $(":root").waitTime(1, timeUnits.SECONDS);
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
 });
 
 Given(/^we fill the form$/, function() {
@@ -17,7 +18,8 @@ Given(/^we fill the form$/, function() {
   $("#cpf-footer").sendKeys("01908298006");
   $("#email-footer").sendKeys("jose.ruiz@gmail.com");
   $("#email_confirm-footer").sendKeys("jose.ruiz@gmail.com");
-  
+  $(":root").waitTime(1, timeUnits.SECONDS);
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
 });
 
 Given(/^we up the page and click the boton "([^"]*)"$/, function(arg1) {
@@ -34,6 +36,8 @@ Given(/^we fill the form again$/, function() {
   $("#emailfalse").sendKeys("jose.ruiz@gmail.com");
   $("#email_confirmfalse").sendKeys("jose.ruiz@gmail.com");
   $(":root").waitTime(1, timeUnits.SECONDS);
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $("#lead-drawer > i").click();
+  $(":root").waitTime(1, timeUnits.SECONDS);
 
 });	
