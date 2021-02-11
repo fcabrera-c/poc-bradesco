@@ -1,6 +1,6 @@
 # language: en
 # ------------------------------------------------------------------------------
-Feature: Navigate on the Home page
+Feature: Navigate on the Home page, fill a form and search
 
   Scenario: Validate Home page
     Given we access on the page
