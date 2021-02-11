@@ -9,14 +9,15 @@ Given(/^we access on the page$/, function() {
 
 
 Given(/^we select option "([^"]*)" in the bar menu$/, function(arg1) {
-  $("#__next > div > header > div.ng-24.styles-module_ng__r3HCi > div.ngi--6--15-16--1- > div > nav > ul > li:nth-child(6) > div > div > div > div.styles-module_nav-item__container__SsGye.styles-module_nav-item__container--header__1c0hi > i").click();
-  $(":root").waitTime(3, timeUnits.SECONDS);
+  $("li.undefined:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)").moveTo();
+  //$("#__next > div > header > div.ng-24.styles-module_ng__r3HCi > div.ngi--6--15-16--1- > div > nav > ul > li:nth-child(6) > div > div > div > div.styles-module_nav-item__container__SsGye.styles-module_nav-item__container--header__1c0hi > i").click();
+  //$(":root").waitTime(3, timeUnits.SECONDS);
   scenario.embed(browser.screenshot().asBytes(), "image/png");
-  $(":root").waitTime(1, timeUnits.SECONDS);
+  //$(":root").waitTime(1, timeUnits.SECONDS);
 });
 Given(/^we click the option "([^"]*)"$/, function(arg1) {
-  $("li.undefined:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2)").click();
-  $("li.undefined:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > span:nth-child(1)").click();
+  $("li.undefined:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1)").moveTo();
+  $("li.undefined:nth-child(6) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul:nth-child(1) > li:nth-child(1) > div:nth-child(1) > a:nth-child(1) > div:nth-child(1)").click();
 });
 
 Given(/^we select the search bar and type something$/, function() {
