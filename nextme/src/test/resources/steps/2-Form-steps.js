@@ -17,7 +17,8 @@ Given(/^we fill the form$/, function() {
   $("#cpf-footer").sendKeys("01908298006");
   $("#email-footer").sendKeys("jose.ruiz@gmail.com");
   $("#email_confirm-footer").sendKeys("jose.ruiz@gmail.com");
-  
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
+  $(":root").waitTime(1, timeUnits.SECONDS);
 });
 
 Given(/^we up the page and click the boton "([^"]*)"$/, function(arg1) {
@@ -34,6 +35,8 @@ Given(/^we fill the form again$/, function() {
   $("#emailfalse").sendKeys("jose.ruiz@gmail.com");
   $("#email_confirmfalse").sendKeys("jose.ruiz@gmail.com");
   $(":root").waitTime(1, timeUnits.SECONDS);
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
+  $(":root").waitTime(1, timeUnits.SECONDS);
   $("#lead-drawer > i").click();
-
+  $(":root").waitTime(1, timeUnits.SECONDS);
 });
