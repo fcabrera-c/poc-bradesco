@@ -18,7 +18,7 @@ Given(/^we validate the fisrt section of home page$/, function() {
   expect($("#__next > div > header > div.ng-24.styles-module_ng__r3HCi > div.ngi--6--15-16--1- > div > nav > ul > li:nth-child(7) > div > div > a > div > span")).to.exist();
   expect($("#__next > div > header > div.ng-24.styles-module_ng__r3HCi > div.styles_header__cta__3CPRO.ngi--19--21--1-")).to.have.text("Quero ser next");
   $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-1.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
 });
 
 Given(/^we validate the CONTA section$/, function() {
@@ -31,7 +31,7 @@ Given(/^we validate the CONTA section$/, function() {
   expect($("#home-cover > div > div > div.styles_home-cover__box__2N3fD.ngi--2-4--23-22-18--3-2--3 > div > div > article > div.next-box.next-box__display-flex.next-box__flexDirection-column.next-box--xs__alignSelf-center.next-box--md__alignSelf-flex-start > a > button")).to.have.text("Quero a conta next");
   
   $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-2.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   
 });
 
@@ -41,17 +41,17 @@ Given(/^we validate the MIMOS section$/, function() {
   expect($("#home-mimos__box__text > h2")).to.have.text("Traz Mimos insuperáveis pra você");
   expect($("#home-mimos__box__text > p")).to.have.text("Fala sério, é bom ser mimado né? Por isso o next te patrocina com benefícios e vantagens que tem tudo a ver com o seu mundo.");
   expect($("#home-mimos__item__image")).to.exist();
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-3-1.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $(":root").waitTime(1, timeUnits.SECONDS);
   $("#home-mimos__item__display-mimos > div").scrollIntoView();
   expect($("#home-mimos__item__image > picture")).to.exist();
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-3-2.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $(":root").waitTime(1, timeUnits.SECONDS);
   $("#home-mimos__black-box").scrollIntoView();
   //$("#home-mimos__box__cashback").scrollIntoView();
   expect($("#home-mimos__box__cashback")).to.exist();
   $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-3-3.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
 });
 
 Given(/^we validate the TEM NO NEXT section$/, function() {
@@ -62,12 +62,12 @@ Given(/^we validate the TEM NO NEXT section$/, function() {
   expect($("#home-tem-no-next > div > div > div.col-xs-22.styles_home-tem-no-next__card__pRPv3.ngi--3---2- > div.next-box.next-box__display-flex.styles_home-tem-no-next__card-one__3TGVV > div > div > div:nth-child(1)")).to.exist();
   expect($("#home-tem-no-next > div > div > div.col-xs-22.styles_home-tem-no-next__card__pRPv3.ngi--3---2- > div.next-box.next-box__display-flex.styles_home-tem-no-next__card-one__3TGVV > div > div > div:nth-child(2)")).to.exist();
   expect($("#home-tem-no-next > div > div > div.col-xs-22.styles_home-tem-no-next__card__pRPv3.ngi--3---2- > div.next-box.next-box__display-flex.styles_home-tem-no-next__card-one__3TGVV > div > div > div:nth-child(3)")).to.exist();
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-4-1.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $(":root").waitTime(1, timeUnits.SECONDS);
   $("#home-tem-no-next > div > div > div.col-xs-22.styles_home-tem-no-next__card__pRPv3.ngi--3---2- > div.next-box.next-box__display-flex.styles_home-tem-no-next__card-two__3mLE7 > div > div > div:nth-child(2)").scrollIntoView();
   expect($("#home-tem-no-next > div > div > div.col-xs-22.styles_home-tem-no-next__card__pRPv3.ngi--3---2- > div.next-box.next-box__display-flex.styles_home-tem-no-next__card-two__3mLE7 > div > div > div:nth-child(1)")).to.exist();
   expect($("#home-tem-no-next > div > div > div.col-xs-22.styles_home-tem-no-next__card__pRPv3.ngi--3---2- > div.next-box.next-box__display-flex.styles_home-tem-no-next__card-two__3mLE7 > div > div > div:nth-child(2)")).to.exist();
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-4-2.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
 });
 
 Given(/^we validate the Second CONTA section$/, function() {
@@ -79,18 +79,18 @@ Given(/^we validate the Second CONTA section$/, function() {
   expect($("#home-conta > div > div > div > div > div.ngi--3--22-24-- > div > div.styles-module_next-tabs__content__3yO2X > div > div.styles_home-tabs__text__2G4TS.ngi--2-2-3--23-10-7-6--2-1- > div > div > div > p")).to.have.text("Você pode escolher um valor, uma data limite e compartilhar direto com os seus contatos.");
   expect($("#home-conta > div > div > div > div > div.ngi--3--22-24-- > div > div.styles-module_next-tabs__content__3yO2X > div > div.styles_home-tabs__text__2G4TS.ngi--2-2-3--23-10-7-6--2-1- > div > div > a > span > span")).to.exist(); 
   $(":root").waitTime(2, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-5-1.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $("#home-conta > div > div > div > div > div.ngi--3--22-24-- > div > div.styles-module_next-tabs__navigation__13i9C.styles-module_next-tabs__navigation--horizontal__2BK6A > span:nth-child(2)").click();
   expect($("#home-conta > div > div > div > div > div.ngi--3--22-24-- > div > div.styles-module_next-tabs__content__3yO2X > div > div.styles_home-tabs__text__2G4TS.ngi--2-2-3--23-10-7-6--2-1- > div > div > h2")).to.have.text("O Flow organiza os seus gastos.");
   expect($("#home-conta > div > div > div > div > div.ngi--3--22-24-- > div > div.styles-module_next-tabs__content__3yO2X > div > div.styles_home-tabs__text__2G4TS.ngi--2-2-3--23-10-7-6--2-1- > div > div > div > p")).to.exist();
   $(":root").waitTime(2, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-5-2.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $("#home-conta > div > div > div > div > div.ngi--3--22-24-- > div > div.styles-module_next-tabs__navigation__13i9C.styles-module_next-tabs__navigation--horizontal__2BK6A > span:nth-child(3) > span").click();
   expect($("#home-conta > div > div > div > div > div.ngi--3--22-24-- > div > div.styles-module_next-tabs__content__3yO2X > div > div.styles_home-tabs__text__2G4TS.ngi--2-2-3--23-10-7-6--2-1- > div > div > h2")).to.have.text("É onde os seus planos acontecem.");
   expect($("#home-conta > div > div > div > div > div.ngi--3--22-24-- > div > div.styles-module_next-tabs__content__3yO2X > div > div.styles_home-tabs__text__2G4TS.ngi--2-2-3--23-10-7-6--2-1- > div > div > div > p")).to.exist();
   expect($("#home-conta > div > div > div > div > div.ngi--3--22-24-- > div > div.styles-module_next-tabs__content__3yO2X > div > div.styles_home-tabs__text__2G4TS.ngi--2-2-3--23-10-7-6--2-1- > div > div > a > span")).to.exist();
   $(":root").waitTime(2, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-5-3.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
 });
 
 Given(/^we validate the WHAT'S NEXT section$/, function() {
@@ -103,10 +103,10 @@ Given(/^we validate the WHAT'S NEXT section$/, function() {
   expect($("#home-whats-on-next > div > div > div.styles_half-green__container__G-6KN.undefined.ngi--2-4--23-21--1--2 > div > div > div.ngi--3--22-- > div.next-box.next-box__display-flex.styles_home-whatsnext__container-card__3_xO6 > div:nth-child(3) > a > div")).to.exist();
   expect($("#home-whats-on-next > div > div > div.styles_half-green__container__G-6KN.undefined.ngi--2-4--23-21--1--2 > div > div > div.ngi--3--22-- > div.next-box.mt-xs-8.mt-md-16.next-box__display-flex.next-box__justifyContent-center > a > button")).to.exist();
   $(":root").waitTime(2, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-6-1.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $("#home-whats-on-next > div > div > div.styles_half-green__container__G-6KN.undefined.ngi--2-4--23-21--1--2 > div > div > div.ngi--3--22-- > div.next-box.next-box__display-flex.styles_home-whatsnext__container-card__3_xO6").scrollIntoView();
   $(":root").waitTime(2, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-6-2.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $(":root").waitTime(1, timeUnits.SECONDS);
 });
 
@@ -116,7 +116,7 @@ Given(/^we validate the AJUDA section$/, function() {
   expect($("#faq-display__header > div > div > article > div > h2")).to.have.text("Ficou alguma dúvida?");
   expect($("#faq-display__header > div > div > article > p")).to.have.text("Se a sua dúvida não estiver nas perguntas frequentes, fala com a gente!");
   $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-7-1.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $("#faq-display__header > div > div > article > p").scrollIntoView();
   $(":root").waitTime(1, timeUnits.SECONDS);
   //$("#faq-display__header > div > div > div.next-box.mt-20.mb-16.next-box__display-flex.next-box__flexDirection-column > div:nth-child(1)").moveTo();
@@ -128,17 +128,17 @@ Given(/^we validate the AJUDA section$/, function() {
   $(":root").waitTime(2, timeUnits.SECONDS);
   $("#accordionNextMe-3 > span").click();
   $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-7-2.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $("#__next > div > div.style_footerGroup__2KIy0 > section > div > div > div > div.ngi--2-7-6--23-14--1--2 > div").scrollIntoView();
   $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-7-3.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   
 });
 
 Given(/^we validate the Footer section$/, function() {
   $("#__next > div > div.style_footerGroup__2KIy0 > footer").scrollIntoView();
   $(":root").waitTime(2, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/img-8-1.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $("#__next > div > div.style_footerGroup__2KIy0 > footer > div > div.ngi--4-4--21-12--8-3-").scrollIntoView();
 });
 
@@ -153,7 +153,8 @@ Given(/^we fill the form$/, function() {
   $("#cpf-footer").sendKeys("01908298006");
   $("#email-footer").sendKeys("jose.ruiz@gmail.com");
   $("#email_confirm-footer").sendKeys("jose.ruiz@gmail.com");
-  
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
+  $(":root").waitTime(1, timeUnits.SECONDS);
 });
 
 Given(/^we up the page and click the boton "([^"]*)"$/, function(arg1) {
@@ -170,6 +171,7 @@ Given(/^we fill the form again$/, function() {
   $("#emailfalse").sendKeys("jose.ruiz@gmail.com");
   $("#email_confirmfalse").sendKeys("jose.ruiz@gmail.com");
   $(":root").waitTime(1, timeUnits.SECONDS);
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $("#lead-drawer > i").click();
   $(":root").waitTime(2, timeUnits.SECONDS);
 });
@@ -192,17 +194,17 @@ Given(/^we select the search bar and type something$/, function() {
   $("#duvidas-content > div > div > div > div.styles_duvidas-content__search-area__1uE1D.ngi--3-12--22-22-- > div.styles_duvidas-content__search-wrapper__2Ra2e > div > div > input").sendKeys("g");
   $("#duvidas-content > div > div > div > div.styles_duvidas-content__search-area__1uE1D.ngi--3-12--22-22-- > div.styles_duvidas-content__search-wrapper__2Ra2e > div > div > input").sendKeys("o");
   $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/type.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $(":root").waitTime(2, timeUnits.SECONDS);
 });
 
 Given(/^we confirm the searching$/, function() {
   $("#duvidas-content > div > div > div > div.styles_duvidas-content__search-area__1uE1D.ngi--3-12--22-22-- > div.styles_duvidas-content__search-wrapper__2Ra2e > div").scrollIntoView();
   $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/search1.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $(":root").waitTime(1, timeUnits.SECONDS);
   $("#duvidas-content > div > div > div > div.styles_duvidas-content__search-area__1uE1D.ngi--3-12--22-22-- > div.styles_duvidas-content__questions-accordion__1DV2G > div:nth-child(3)").scrollIntoView();
   $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.screenshot().saveTo("C:/Users/Anzen/Documents/Minium/Evidencias Web/search2.png");
+  scenario.embed(browser.screenshot().asBytes(), "image/png");
   $(":root").waitTime(1, timeUnits.SECONDS);
 });	
