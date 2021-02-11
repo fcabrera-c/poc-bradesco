@@ -1,12 +1,3 @@
-Given(/^we access on the page again$/, function() {
-  browser.get("https://next.me");
-  var timeUnits = require("minium/timeunits");
-  $(":root").waitTime(1, timeUnits.SECONDS);
-  browser.configure().window().maximize();
-  $("#__next > div > div.styles_cookie-message__1yCe2 > div > div > button").click();
-  $(":root").waitTime(1, timeUnits.SECONDS);
-});
-
 Given(/^we go to the form below of section "([^"]*)"$/, function(arg1) {
   $("#__next > div > div.style_footerGroup__2KIy0 > section > div > div > div > div.ngi--2-7-6--23-14--1--2 > div").scrollIntoView();
   $(":root").waitTime(1, timeUnits.SECONDS);
