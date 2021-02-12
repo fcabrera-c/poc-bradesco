@@ -23,7 +23,7 @@ Given(/^we validate the fisrt section of home page$/, function() {
 
 Given(/^we validate the CONTA section$/, function() {
   $("#home-cover > div > div > div.styles_home-cover__box__2N3fD.ngi--2-4--23-22-18--3-2--3 > div > div > article").scrollIntoView();
-  expect($("#home-cover > div > div > div.styles_home-cover__box__2N3fD.ngi--2-4--23-22-18--3-2--3 > div > div > article > h2")).to.have.text("Tem tudo o que você procura em um banco digital");
+  expect($("#home-cover > div > div > div.styles_home-cover__box__2N3fD.ngi--2-4--23-22-18--3-2--3 > div > div > article > h2")).to.have.text("Tem tudo o que você procura em um banco digita");
   expect($("#home-cover > div > div > div.styles_home-cover__box__2N3fD.ngi--2-4--23-22-18--3-2--3 > div > div > article > ul > li:nth-child(1) > div.styles-module_next-list-item__content__1udMH > span")).to.have.text("Transferências gratuitas e ilimitadas para todos os bancos.");
   expect($("#home-cover > div > div > div.styles_home-cover__box__2N3fD.ngi--2-4--23-22-18--3-2--3 > div > div > article > ul > li:nth-child(3) > div.styles-module_next-list-item__content__1udMH > span")).to.have.text("Saques gratuitos e ilimitados nos caixas eletrônicos Bradesco e Rede Banco24Horas.");
   expect($("#home-cover > div > div > div.styles_home-cover__box__2N3fD.ngi--2-4--23-22-18--3-2--3 > div > div > article > ul > li:nth-child(5) > div.styles-module_next-list-item__content__1udMH > span")).to.have.text("Investimentos exclusivos para o seu dinheiro render.");
