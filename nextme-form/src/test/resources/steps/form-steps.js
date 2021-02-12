@@ -15,7 +15,7 @@ Given(/^we go to the form below of section "([^"]*)"$/, function(arg1) {
 
 Given(/^we fill the form$/, function() {
   $("#name-footer").sendKeys("Jose Ruiz");
-  $("#cpf-footer").sendKeys("01908298006");
+  $("#cpf-footer").sendKeys("01908298005");
   $("#email-footer").sendKeys("jose.ruiz@gmail.com");
   $("#email_confirm-footer").sendKeys("jose.ruiz@gmail.com");
   $(":root").waitTime(1, timeUnits.SECONDS);
