@@ -3,7 +3,7 @@ Given(/^we access on the page$/, function() {
   var timeUnits = require("minium/timeunits");
   $(":root").waitTime(1, timeUnits.SECONDS);
   browser.configure().window().maximize();
-  $("#__next > div > div.styles_cookie-message__1yCe2 > div > div > button").click();
+  $("#__next > div > div.styles_cookie-message__1yCe2.theme-container-dark > div > div > div > button.styles_cookie-message__button__37WbG.next-button.next-button--primary.next-button__size--medium").click();
   $(":root").waitTime(1, timeUnits.SECONDS);
 });
 
